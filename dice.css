@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.32),
+  0 6px 16px 0 rgba(0, 0, 0, 0.24),
+  0 6px 24px 0 rgba(0, 0, 0, 0.20),
+  0 6px 32px 0 rgba(0, 0, 0, 0.14);
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+sub{
+  font-size: 40px;
+  color: red;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+html, body, .container{
+    height: 100%;
+  }
+  
+  html {
+    font-size: 63.5%;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0em;
+    font-size: 2.5rem;
+    text-align: center;
+    background: black;
+    background-image: url("https://media.istockphoto.com/vectors/vector-poker-black-background-playing-card-symbols-pattern-blackjack-vector-id868429174?k=6&m=868429174&s=170667a&w=0&h=aLe1LzxME6exY4aA6C_cJVROOPohXhdW1eAncj6k9ng=");
+    color: white;
+  }
+  .play{
+    padding: 2em 2em 0 2em;
+  }
+  .container h1 {
+    color: #d3d3d3;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+  
+  .game-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 1em auto;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-size: 1.3em;
+    max-width: 100%;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 1em auto;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-size: 1em;
+    max-width: 100%;
+  }
+  .info div{
+    font-size: 0.8em;
+    width: 20%;
+  }
+  .image-dice {
+    width: 200px;
+    height: 83px;
+  }
+  
+  .info img {
+    width: 38%;
+  }
+  .number {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 19% 0 19%;
+    max-width: 100%;
+    margin: 0 auto 1em auto;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  button {
+    height: 3em;
+    width: 10%;
+    font-size: 1em;
+    margin: 0 auto 1em auto;
+    border: 3px solid white;
+    border-radius: 5%;
+    color: white;
+    /* margin: 0.5em; */
+    background: #041245;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #404040;
+    color: white;
+  }
+  
+  .selected {
+    background: #07E1FF;
+    color: #041245;
+  }
+  
+  .disabled {
+    background-color: #404040;
+    pointer-events: none;
+  }
+  
+  .disabled:hover {
+    background-color: #404040;
+    color: white;
+  }
+  
+  #h {
+     margin: 2rem 0 1rem 0; 
+  }
+  
+  .text-level-1{
+    margin: 1rem 0 1rem 0;
+  }
+  
+  .text-level-2{
+    margin: 1rem 0 1rem 0;
+  }
+  
+  
+  .text-level-3{
+    margin: 1rem 0 1rem 0;
+  }
+  #result{
+    max-width: 100%;
+  }
+  
+  /* ------ Responsive Code -----*/
+  @media screen and (max-width:900px) and (min-width:560px) {
+    .container h1 {
+      font-size: 4.5rem;
+    }
+    .number {
+       padding: 0 12% 0 12%; 
+    }
+    .info div{
+      font-size: 1em;
+      width: 20%;
+    }
+    .image-dice {
+      width: 70%;
+      height: 70%; 
+   }
+    .info {
+       margin: 3em 0 1em 0; 
+    }
+    button {
+       height: 2.5em; 
+       width: 4em;
+       font-size: 1.2em; 
+    }
+  }
+  @media screen and (max-width:560px) and (min-width:320px){
+    .container h1 {
+      font-size: 3.5rem;
+    }
+    .number {
+       padding: 0 12% 0 12%; 
+       padding: 0;
+       margin: 0 auto 0 auto;
+    }
+
+    .info {
+       margin: 1em 0 1em 0; 
+    }
+    .info div{
+      font-size: 0.9em;
+      width: 25%;
+    }
+    .image-dice {
+      width: 70%;
+      height: 70%; 
+   }
+   .info img{
+     width: auto;
+     height: auto;
+   }
+   .text-level-1{
+     font-size: 0.8em;
+   }
+   #result{
+     font-size: 0.8em;
+   }
+    button {
+       height: 1.5em; 
+       width: 2.5em;
+       font-size: 1em; 
+    }
+  }
+
+  @media screen and (max-width:320px){
+    .container h1 {
+      font-size: 2.5rem;
+      
+    }
+    .number {
+       padding: 0 12% 0 12%; 
+       padding: 0;
+       margin: 0 auto 0 auto;
+    }
+
+    .info {
+       margin: 0.5em 0 0em 0; 
+    }
+    .info div{
+      font-size: 0.6em;
+      width: 30%;
+    }
+    .image-dice {
+      width: 60%; 
+      height: 60%;
+   }
+   .info img{
+     width: auto;
+     height: auto;
+   }
+   .text-level-1,.text-level-2,.text-level-3{
+     font-size: 0.8em;
+   }
+   #result{
+     font-size: 0.8em;
+   }
+    button {
+       height: 1.5em; 
+       width: 2em;
+       font-size: 1em; 
+    }
+  }
+  

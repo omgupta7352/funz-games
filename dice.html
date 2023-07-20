@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="dice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">fun<sub>z</sub></div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="" href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="ourteam.html">Team</a></li>
+        <li><a href="sign.html">Login</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+        <div class="play">
+            <div class="game-header">
+                <div>
+                    <h1>Roll The Dice</h1>
+                </div>
+            </div>
+            <div class="info">
+                <div>Selected Variable: <span id="text-user-selected">0</span></div>
+                <div class="image-dice">
+                    <img id="dice" src="img/load.gif" alt="A dice image">
+                </div>
+                <div>Total Score: <span id="text-total-score">0</span></div>
+            </div>
+            <div id="text-init-loading" class="text-level-1">
+                Loading
+            </div>
+            <div class="guess">
+                <div class="number">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </div>
+                <div class="number">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                </div>
+            </div>
+            <div id="h" class="text-level-3">
+                The dice will change in <span id="timeS">0</span> seconds
+            </div>
+            <div class="text-level-3">
+                Trial # <span id="text-ttrial-number">1</span>
+            </div>
+        </div>
+        <div id="result" class="text-level-2">Can you guess it?</div>
+    </div>
+    <script src="dice.js"></script>
+
+  </body>
+</html>

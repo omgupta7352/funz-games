@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.32),
+  0 6px 16px 0 rgba(0, 0, 0, 0.24),
+  0 6px 24px 0 rgba(0, 0, 0, 0.20),
+  0 6px 32px 0 rgba(0, 0, 0, 0.14);
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+sub{
+  font-size: 40px;
+  color: red;
+}
+input[type="checkbox"]{
+  display: none;
+}
+body{
+    background: rgb(159, 127, 239);
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: rgb(88, 76, 119);
+}
+
+
+#contact{
+    width: 80%;
+    height: 70%;
+    margin: 5% 10%;
+    box-shadow: 3px 3px 15px grey;
+    background: rgb(242, 226, 255);
+}
+
+
+.con-box{
+    display: inline-block;
+}
+.info{
+    color: rgb(201, 192, 228);
+    height: 100%;
+    width: 39%;
+    background: rgb(88, 76, 119);
+}
+.con-form{
+    width: 60%;
+}
+.con{
+    padding: 5%;  
+  }
+  .con h2{
+      padding-top: 0;
+      margin-top: 0;
+  }
+  .info ul li{
+      list-style: none;
+      margin: 8% 0;
+  }
+  .social-media{
+      margin-top: 30%;
+  }
+  .social-media ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 5%;
+  }
+  .social-media ul li a{
+    font-size: 30px;
+    color: rgb(201, 192, 228);
+  }
+
+
+  h2, .form input, .form textarea, #sbmt-btn{
+    display: block;
+    border: none;
+    /* align-items: center; */
+    margin:5%;
+    width: 90%;
+    padding: 2%;
+}
+input, textarea{
+    background: rgb(201, 192, 228);
+}
+::placeholder{
+    color: rgb(88, 76, 119);
+}
+
+h2{
+    text-transform: uppercase;
+}
+.con-form h2{
+    color: rgb(88, 76, 119);
+}
+#sbmt-btn{
+    padding: 1em 10em ;
+    color: rgb(201, 192, 228);
+    width: 94%;
+    background: rgb(88, 76, 119);
+    /* margin-bottom: 20%; */
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width:850px){
+    #contact{
+        width: 90%;
+         height: 100%;
+        margin-left: 5%;
+        background: none;
+    }
+    .info, .con-form{
+        /* display: inline-block; */
+        width: 100%;
+        height: 60%;
+        
+    }
+    .social-media{
+        margin-top: 5%;
+    }
+    .social-media ul li a{
+        font-size: 35px;
+      }
+}
+@media (max-width:600px){
+    #contact{
+        width: 90%;
+         height: 100%;
+        margin-left: 5%;
+        background: none;
+    }
+    .info, .con-form{
+        /* display: inline-block; */
+        width: 100%;
+        height: 50%;
+        
+    }
+    .social-media{
+        margin-top: 5%;
+    }
+    .social-media ul li a{
+        font-size: 35px;
+      }
+    .social-media ul li a{
+        font-size: 25px;
+      }
+}
+@media (max-width: 850px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
