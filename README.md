@@ -2,7 +2,6 @@
 ![Funz Game](fuz1.png)
 ![](funz2.png)
 
-# Funz Games
 
 Funz Games is a web-based application that features a collection of fun and interactive games including Tic-Tac-Toe, Dice Game, Maths Game, Rock Paper Scissor, 2048 Game, and Guess Number Game. This project is built using HTML, CSS, and JavaScript.
 
@@ -14,7 +13,7 @@ Funz Games is a web-based application that features a collection of fun and inte
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -44,7 +43,7 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/funz_games.git
+    git clone https://github.com/omgupta7352/funz-games.git
     ```
 
 2. Navigate to the project directory:
@@ -86,9 +85,6 @@ Contributions are welcome! If you would like to contribute to this project, plea
 
 5. Open a pull request on GitHub.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
 
