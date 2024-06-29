@@ -21,7 +21,7 @@
 
 ## Demo
 
-You can try out the Unsplash clone live [here](https://omgupta7352.github.io/Unsplash_Clone/).
+You can try out the Unsplash clone live [here](https://funz-games-omgupta.netlify.app/).
 
 ## Technologies Used
 
@@ -36,7 +36,7 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/omgupta7352/Unsplash_Clone.git
+    git clone https://github.com/omgupta7352/funz-games.git
     ```
 
 2. Navigate to the project directory:
