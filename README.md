@@ -42,7 +42,7 @@ To run this project locally, follow these steps:
 2. Navigate to the project directory:
 
     ```bash
-    cd unsplash_clone
+    cd funz-games
     ```
 
 3. Open `index.html` in your preferred web browser.
