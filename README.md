@@ -8,6 +8,7 @@ Funz Games is a web-based application that features a collection of fun and inte
 ## Table of Contents
 
 - [Features](#features)
+- [Demo](#demo)
 - [Games Included](#games-included)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
@@ -20,6 +21,11 @@ Funz Games is a web-based application that features a collection of fun and inte
 - A variety of interactive games in one web application.
 - User-friendly interface and design.
 - Responsive design for mobile and desktop use.
+
+## Demo
+
+You can try out the Funz Games live [here](https://funz-games-omgupta.netlify.app/).
+
 
 ## Games Included
 
