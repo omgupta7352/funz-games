@@ -1,4 +1,4 @@
-# Funz-games
+# Funz-Games
 ![Funz Game](fuz1.png)
 ![](funz2.png)
 
